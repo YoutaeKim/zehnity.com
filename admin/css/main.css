@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+/* 공통 */
+.content {
+	background: #f2f6fc;
+	position: relative;
+	min-height: 100vh;
+	padding: 0 0 100px 300px;
+	top: 60px;
+	margin-left: 0;
+	transition: margin .15s ease-in-out;
+	box-sizing: border-box;
+}
+.content.on {
+	margin-left: -300px;
+}
+.content.main_content {
+	padding: 50px 0 100px 300px;
+}
+.tab {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 30px;
+	overflow: auto;
+    white-space: nowrap;
+}
+.tab li {
+	margin-right: 30px;
+}
+.tab li a {
+	font-size: 16px;
+	display: block;
+	position: relative;
+	line-height: 55px;
+}
+.tab li a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	background: transparent;
+}
+.tab li.on a {
+	color: #0061f2;
+	font-weight: 600;
+}
+.tab li.on a:after {
+	background: #0061f2;
+}
+.white_box {
+	background: #fff;
+	box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
+	border-radius: 5px;
+	padding: 35px 30px;
+	margin-bottom: 30px;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"] {
+	height: 40px;
+	border-radius: 5px;
+	padding: 0 12px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+/* 공통 테이블 */
+.board_table table {
+	border-top: 1px solid #333;
+}
+.board_table table.no_link tbody tr {
+	cursor: auto;
+}
+.board_table table.no_link tbody tr:hover {
+	background: transparent;
+}
+.board_table table tbody tr {
+	cursor: pointer;
+}
+.board_table table tbody tr:hover {
+	background: #fafafa;
+}
+.board_table table th,
+.board_table table td {
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 13px;
+}
+.board_table table th {
+	background: #f2f2f2;
+	color: #333;
+}
+.board_table table th.num {
+	width: 100px;
+}
+.board_table table th.data {
+	width: 200px;
+}
+.board_table table th.view {
+	width: 120px;
+}
+.board_table table td {
+	color: #666;
+}
+.board_table table td.tit {
+	text-align: left;
+}
+.board_table table td.tit div {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	line-height: 1.5em;
+	height: 1.5em;
+}
+.board_table table td.no-ct {
+	padding: 30px 10px;
+}
+
+/* 공통 버튼 */
+.btn {
+	text-align: center;
+}
+.btn a {
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+	color: #fff;
+	border-radius: 5px;
+	background: #0061f2;
+	height: 50px;
+	line-height: 48px;
+	font-size: 16px;
+	border: 1px solid #0061f2;
+	box-sizing: border-box;
+}
+.btn a:hover {
+	background: #0052ce;
+}
+.btn.small a {
+	width: 160px;
+	height: 45px;
+	line-height: 43px;
+	font-size: 15px;
+}
+.btn.s-small a {
+	width: 90px;
+	height: 40px;
+	line-height: 38px;
+	font-size: 14px;
+}
+.btn.gray a {
+	width: 90px;
+	height: 45px;
+	line-height: 43px;
+	font-size: 14px;
+	background: transparent;
+	border: 1px solid #ccc;
+	color: #000;
+	box-sizing: border-box;
+}
+.btn.gray a:hover {
+	background: #f2f2f2;
+}
+.btn.black a {
+	background: #333;
+	border: 1px solid #333;
+}
+.btn a.bor {
+	background: #fff;
+	color: #0061f2;
+}
+.btn a.bor:hover {
+	background: #0061f2;
+	color: #fff;
+}
+
+/* 결제모듈 조회 */
+.search_wrap ul {
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.search_wrap ul li {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+}
+	.search_wrap ul li.col03 {
+		flex-wrap: nowrap;
+	}
+.search_wrap ul li .wrap {
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	line-height: 1.5em;
+	font-size: 13px;
+}
+	.search_wrap ul li.col02 .wrap {
+		width: 50%;
+		min-height:51px;
+	}	
+	.search_wrap ul li.col03 .wrap {
+		/* width: 33.333%;  */
+	}	
+.search_wrap ul li .wrap > div {
+	padding: 10px 0;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.search_wrap ul li .wrap > div.adr {
+	display: block;
+}
+.search_wrap ul li .wrap .tit {
+	font-weight: 500;
+	background: #f2f2f2;
+	min-width: 150px;
+	text-align: center;		
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	justify-content: center;
+}
+.search_wrap ul li .wrap .sub {
+    padding: 10px;
+    width: 100%;
+}
+.search_wrap ul li .wrap .sub select {
+	min-width: 160px;
+}
+.search_wrap ul li .wrap .sub input.small {
+	width: 80px;
+}
+.search_wrap ul li .wrap .sub .middle {
+	width: 160px;
+}
+.search_wrap ul li .wrap .sub .large {
+	width: 250px;
+}
+.search_wrap ul li .wrap .sub input.datepicker {
+	background: url('/admin/image/sub/calendar.png') no-repeat center right 15px / 20px;
+
+}
+.search_wrap ul li .wrap .sub span {
+	margin-right: 15px;
+}
+.search_wrap .btn {
+	margin-top: 30px;
+}
+.pay_search {
+	margin-top: 50px;
+	border-top: 1px solid #ddd;
+	padding-top: 50px;
+}
+.pay_search .pay_top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.pay_top .left .name {
+	font-size: 21px;
+	margin-bottom: 15px;
+}
+.pay_top .left .money span {
+	margin-right: 10px;
+	font-size: 17px;
+}
+.pay_top .left .money span img {
+	height: 18px;
+   margin-top: 4px
+}
+.view_type li a {
+	display: block;
+	line-height: 45px;
+	background: #fafafa;
+	border: 1px solid #ddd;
+	width: 80px;
+	text-align: center;
+	color: #999;
+}
+.view_type li.on a {
+	background: #333;
+	border: 1px solid #333;
+	color: #fff;
+}
+.cal_wrap { 
+	position: relative;
+}
+.diary_num {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 30px;
+	letter-spacing: -0.5px;
+}
+.calendar_table {
+	word-break: keep-all;
+    white-space: nowrap;
+    overflow: auto;
+}
+.diary_calendar {
+	width: 100%;
+	table-layout: fixed;
+}
+.diary_calendar th {
+	background: #ebebeb;
+	font-weight: 500;
+	padding: 20px 0;
+	font-size: 16px;
+	border: 1px solid #ddd;
+}
+.diary_calendar td {
+	border: 1px solid #ddd;
+	height: 140px;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+.calendar_meno {
+	margin-top: 15px;
+	font-size: 14px;
+}
+.calendar_meno .ok {
+	color: #0061f2;
+	margin-bottom: 5px;
+}
+.calendar_meno .chk {
+	color: #ff1818;
+}
+.calendar_meno em {
+	border-radius: 3px;
+	line-height: 25px;
+	padding: 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.calendar_meno .ok em {
+	background: #e6effe
+}
+.calendar_meno .chk em {
+	background: #ffe7e7;
+}

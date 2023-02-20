@@ -1,0 +1,497 @@
+@charset "utf-8";
+
+.path_wrap {
+	margin-bottom: 30px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	padding: 15px 0;
+}
+.path li.home {
+	padding-left: 0;
+}
+.path li.home:before {
+	display: none;
+}
+.path li.home img {
+	height: 13px;
+	margin-top: 5px;
+}
+.path li {
+	position: relative;
+	padding-left: 30px;
+}
+.path li:before {
+	content: '〉';
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 13px;
+	font-size: 11px;
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+}
+.path li a {
+	display: block;
+	font-size: 14px;
+}
+.path li:last-child a {
+	color: #0061f2;
+}
+
+
+/* 도움말 */
+.info_wrap {
+	font-size: 0;
+}
+.info_wrap > div {
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	margin-right: 2%;
+	box-sizing: border-box;
+	font-size: 15px;
+	word-break: break-all;
+}
+.info_wrap > div:last-child {
+	margin-right: 0;
+}
+.info_cont .info_tit {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.info_cont .info_sub {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+/*
+.info_cont .info_sub:after {
+    content: '';
+    position: absolute;
+    background: #ccddfc;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 12px;
+    z-index: -1;
+}
+*/
+.info_cont .info_sub img {
+	margin-right: 5px;
+	margin-top: 7px;
+}
+
+.info_cont .info_sub_small {
+	font-size: 16px;
+	margin-left: 18px;
+	font-weight: 500;
+	margin-left: 21px;
+	margin-bottom: 13px;
+}
+.info_cont ul {
+	margin-left: 21px;
+	margin-bottom: 30px;
+}
+.info_cont ul li {
+	margin-bottom: 10px;
+}
+.info_cont ul.sub_txt li {
+	margin-bottom: 12px;
+}
+.info_cont ul li p {
+	margin-left: 20px;
+	font-size: 14px;
+	line-height: 2em;
+}
+
+.test_form {
+	margin-bottom: 40px;
+}
+.test_form .test_tit {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.test_form .test_tit .dh_red {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.test_form ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 12px;
+}
+.test_form ul li > div {
+	width: 50%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	position: relative;
+	font-size: 13px;
+	line-height: 40px;
+	min-height: 40px;
+}
+.test_form ul li.full > div {
+	width: 100%;
+}
+.test_form ul li > div label {
+	margin-bottom: 5px;
+	display: inline-block;
+	font-weight: 500;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+.test_form ul li > div .input {
+	padding-left: 95px;
+	    word-break: break-all;
+}
+.test_form ul li > div input {
+	display: block;
+	height: 40px;
+	border-radius: 5px;
+	padding: 0 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* 거래내역 */
+.approval_top,
+.cp_top {
+	margin-bottom: 15px;
+	justify-content: space-between;
+}
+.approval_top .right span {
+	margin-left: 10px;
+}
+.table_scroll {
+	text-align: right;
+	margin-bottom: 5px;
+	color: #666;
+}
+.board_table {
+	word-break: keep-all;
+	white-space: nowrap;
+   overflow: auto;
+}
+.board_table.board_list {
+	word-break: break-all;
+	white-space: normal;
+   overflow: visible;
+}
+.board_table table.box_list th,
+.board_table table.box_list td {
+	border: 1px solid #ddd;
+}
+.board_table table.box_list .total td {
+	background: #f2f2f2;
+}
+
+.excel_btn a {
+	border: 1px solid #2e7d32;
+	border-radius: 5px;
+	padding: 0 20px;
+	font-size: 14px;
+	height: 45px;
+	line-height: 43px; 
+	display: inline-block;
+	color: #2e7d32;
+}
+.excel_btn a:hover {
+	background: #e4f1e4;
+}
+
+/* 페이징 */
+.board-pager {
+	text-align:center;
+	margin-top: 30px;
+	font-size: 0;
+}
+.board-pager a {
+	display:inline-block;
+	width:35px; height:40px;
+	line-height:35px;
+	border:1px solid #ddd;
+	border-right: 0;
+	vertical-align:middle;
+	font-size:15px;
+	color: #0061f2; 
+	box-sizing: border-box; 
+}
+.board-pager a.on,
+.board-pager a.on:hover, 
+.board-pager a.on:focus {
+	background:#0061f2;
+	border-color:#0061f2;
+	color:#fff;
+}
+.board-pager a:hover, 
+.board-pager a:focus {
+	background: #e0e5ec;
+}
+.board-pager button {
+	width:35px; height:40px;
+	border:1px solid #ddd;
+	background: none;
+}
+.board-pager button.prev {
+	border-radius: 5px 0 0 5px;
+}
+.board-pager button.next {
+	border-radius: 0 5px 5px 0;
+}
+.board-pager button:hover,
+.board-pager button:focus {
+	background: #e0e5ec;
+}
+.board-pager button img {
+	margin: 10px 0;
+}
+
+/* list search */
+.board-search {
+	text-align:center;
+	margin-top:30px;
+}
+.board-search-field {
+	width:200px;
+	margin:0 5px;
+}
+.board-search-btn {
+	font-size:14px;
+	background:#0061f2;
+	height: 45px;
+	padding: 0 20px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* board view */
+.board-view {
+	border-top:1px solid #333;
+}
+.board-view-tit {
+	padding:12px 5px;
+	color:#333;
+	font-weight:600;
+	line-height:1.6em;
+	border-bottom:1px solid #555;
+}
+.board-view-info {
+	padding:15px 5px;
+	text-align:right;
+	font-size:13px;
+	color:#888;
+}
+.board-view-info span {
+	margin:0 6px;
+	color:#ddd;
+}
+.board-view-ct {
+	padding:10px 5px 20px;
+	/* border-bottom:1px solid #555; */
+}
+.board-view-file {
+	margin-top:50px;
+}
+.board-view-file li {
+	font-size:13px;
+	letter-spacing:0.01em;
+	padding-left:20px;
+	margin:5px 0;
+	background:url("/admin/image/board_img/icon_file.gif") no-repeat left center;
+}
+.board-view-file a {
+	color:#666;
+}
+.board-view-file a:hover {
+	border-bottom:1px dotted #666;
+}
+/* prev/next contents nav */
+.board-view-nav {
+	margin-top:30px;
+	border-top:1px solid #555;
+	border-bottom:1px solid #555;
+}
+.board-view-nav li img {
+	vertical-align:middle;
+	margin-left:5px;
+}
+.board-view-nav li {
+	padding:10px 5px 10px 5em;
+	position:relative;
+}
+.board-view-nav li:first-child {
+	border-bottom:1px dotted #ddd;
+}
+.board-view-nav .lb {
+	position:absolute;
+	left:5px; top:10px;
+	color:#333;
+	font-weight:600;
+}
+/* board view btns */
+.board-view-btns {
+	margin-top:30px;
+	position: relative;
+}
+.board-view-btns .right {
+	position: absolute;
+	right: 0;
+	top: 0;	
+}
+
+/* board write */
+.board-write th,
+.board-write td {
+	padding: 10px;
+	text-align: left;
+	font-weight: normal; 
+	border: 1px solid #ddd;
+	font-size: 13px;
+}
+.board-write th {
+	width: 120px;
+	background: #f2f2f2;
+}
+.board-write textarea {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+/* 사이트관리 - 다운로드 */
+.down_popup {
+	display: none;
+}
+.down_popup .popup {
+	background: #fff;
+	position: fixed;
+	top: 23%;
+	left: 0; right: 0;
+	width: 700px;
+	box-sizing: border-box;
+	padding: 40px 35px;
+	border-radius: 5px;
+	z-index: 999;
+	margin: 0 auto;
+}
+.down_popup .popup .tit {
+	font-weight: bold;
+	font-size: 23px;
+	margin-bottom: 25px;
+}
+.down_popup .popup .esc {
+	position: absolute;
+	right: 0;
+   top: -45px;
+}
+.down_popup .popup .esc img {
+	height: 30px;
+}
+
+.my_title {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+/* info write */
+.info-write {
+	font-size: 13px;
+}
+.info-write select,
+.info-write input[type="text"],
+.info-write input[type="password"] {
+	height: 35px;
+}
+.info-write .search_wrap ul li .wrap .sub {
+	padding: 8px 10px;
+}
+.id_btn a {
+	display: inline-block;
+	text-align: center;
+	width: 120px;
+    height: 35px;
+    line-height: 33px;
+	color: #fff;
+	border-radius: 5px;
+	background: #0061f2;
+	border: 1px solid #0061f2;
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+.board_table table td a {
+	font-weight: bold;
+}
+
+/* 로그인 */
+.login_wrap {
+	background: #f2f6fc;
+	position: relative;
+	height: 100vh;
+}
+.login_wrap .flex {
+	justify-content: center;
+	box-sizing: border-box;
+	height: 100vh;
+   margin-top: -110px;
+}
+.login_wrap .white_box {
+	width:  600px;
+	margin: 0 auto;
+	padding: 50px 40px;
+	box-sizing: border-box;
+}
+.login input[type="text"],
+.login input[type="password"] {
+	width: 100%;
+	height: 50px;
+}
+.login_tit {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.login_btn a {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	border-radius: 5px;
+	background: #0061f2;
+	height: 55px;
+	line-height: 53px;
+	font-size: 17px;
+	border: 1px solid #0061f2;
+	box-sizing: border-box;
+}
+.login_btn a:hover {
+	background: #0052ce;
+}
+.login_footer {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	padding: 30px 20px;
+	color: #666;
+	line-height: 1.8em;
+   font-size: 14px;
+   word-break: keep-all;
+}

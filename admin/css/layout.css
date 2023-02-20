@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+#wrap {
+	width:100%;
+	min-width: 320px;
+	position:relative; 
+	margin:0 auto;
+	overflow:hidden;
+}
+#header {
+	width:100%;
+	position:fixed; 
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	margin:0 auto;
+	    background: #fff;
+}
+#container {
+	width:100%;
+	position:relative; 
+	margin:0 auto;
+}
+.inner {
+	margin: 0 40px;
+	position:relative;
+}
+#footer{
+	width:100%;
+	clear:both;
+	position:relative; 
+	margin:0 auto;
+}
+
+
+
+/* 반응형 */
+@media all and (max-width:1500px) {
+	
+	.inner { margin: 0 30px; }
+
+}
+@media all and (max-width:1199px) {
+	
+
+
+}
+
+/* 타블렛 가로 */
+@media all and (max-width:1099px) {
+}
+
+
+/* 타블렛 세로 */
+@media all and (max-width:1023px) {
+}
+
+
+/* 타블렛 가로 미만 ~ 모바일 */
+@media all and (max-width:767px) {
+	.inner { width: auto; margin: 0 3.9%; }
+
+}
+
+/* 모바일 상세 */
+@media all and (max-width:640px) {
+}
+
+/* 모바일 가로 */
+@media all and (max-width:568px) {
+
+}
+
+@media all and (max-width:425px) {
+
+}
+
+@media all and (max-width:375px) {
+
+}
+
+@media all and (max-width:320px) {
+
+}

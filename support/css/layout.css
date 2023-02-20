@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+#wrap {
+	width: 100%;
+	min-width: 320px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	margin: 0 auto;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+}
+
+#header.sub {
+	position: fixed;
+	background-color: transparent;
+	border: unset;
+}
+
+#container {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.inner {
+	width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer {
+	width: 100%;
+	clear: both;
+	position: relative;
+	margin: 0 auto;
+	background-color: #292e3a;
+}
+
+
+
+/* 반응형 */
+@media all and (max-width:1399px) {
+	.inner {
+		width: auto;
+		margin-left: 3.90625%;
+		margin-right: 3.90625%;
+	}
+
+
+}
+
+@media all and (max-width:1199px) {
+	.inner {
+		width: auto;
+		margin-left: 3.90625%;
+		margin-right: 3.90625%;
+	}
+
+
+}
+
+/* 타블렛 가로 */
+@media all and (max-width:1099px) {}
+
+
+/* 타블렛 세로 */
+@media all and (max-width:1023px) {}
+
+
+/* 타블렛 가로 미만 ~ 모바일 */
+@media all and (max-width:767px) {
+	.inner {
+		width: auto;
+		margin-left: calc(100vw * (30/640));
+		margin-right: calc(100vw * (30/640));
+	}
+
+
+}
+
+/* 모바일 상세 */
+@media all and (max-width:640px) {}
+
+/* 모바일 가로 */
+@media all and (max-width:568px) {}
+
+@media all and (max-width:425px) {}
+
+@media all and (max-width:375px) {}
+
+@media all and (max-width:320px) {}

@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+
+/* PC이하 */
+@media all and (max-width:1750px) {
+
+	.search_wrap ul li .wrap .sub .large { width: 180px; }
+
+	.search_wrap ul li.col03 { flex-wrap: wrap; }
+	.search_wrap ul li.col03 .wrap { width: 50%; border-bottom: 1px solid #ddd; }
+	.search_wrap ul li.col03 .wrap:last-child { border-bottom: 0px ; }
+
+}
+
+@media all and (max-width:1500px) {
+
+	.content { padding: 0 0 100px; }
+	.content.main_content { padding: 50px 0 100px; }
+
+}
+
+@media all and (max-width:1250px) {
+
+	.search_wrap ul li { border-bottom: 0; }
+	.search_wrap ul li .wrap { border-bottom: 1px solid #ddd; }
+	.search_wrap ul li.col03 .wrap:last-child { border-bottom: 1px solid #ddd; } 
+	.search_wrap ul li.col02 .wrap,
+	.search_wrap ul li.col03 .wrap { width: 100%; }
+	.search_wrap ul li .wrap .sub select { width: 100%; }
+	.search_wrap.ocb_search ul li .wrap .sub {display: block;font-size: 0;}
+	.search_wrap.ocb_search ul li .wrap .sub select {width: 49%;font-size: 15px;margin-right: 2% !important; margin-bottom: 2%; }
+	.search_wrap.ocb_search ul li .wrap .sub select:nth-child(2n) { margin-right: 0 !important; }
+	.search_wrap.ocb_search ul li .wrap .sub input { width: 100%; }
+	.diary_calendar { table-layout: auto; }
+
+}
+
+
+@media all and (max-width:1199px) {
+
+	.board_table table th.num { width: 80px; }
+	.board_table table th.data { width: 110px; }
+	.board_table table th.view { width: 80px; }
+
+}
+
+/* 타블렛 세로 */
+@media all and (max-width:1023px) {
+}
+
+/* 타블렛 가로 미만 ~ 모바일 */
+@media all and (max-width:767px) {
+
+	.white_box { padding: 30px 20px; }
+	.search_wrap ul li .wrap > div { font-size: 14px; }
+	.search_wrap ul li .wrap .tit { min-width: 100px; }
+	.search_wrap ul li .wrap .sub .middle,
+	.search_wrap ul li .wrap .sub .large { width: 100%; }
+	.search_wrap ul li .wrap .sub .middle.num { width: 120px; }
+	.search_wrap ul li .wrap .sub .large.id { width: 55%; }
+	.search_wrap ul li .wrap .sub.txt { display: block; } 
+	.search_wrap ul li .wrap .sub.txt span { margin: 5px 0 0 !important; display: block; }
+	.search_wrap.ocb_search ul li .wrap .sub select { font-size: 14px; width: 100%; margin-right: 0 !important; }
+	.board_table table th, .board_table table td { padding: 15px; font-size: 13px; }
+	.pay_search .pay_top { display: block; }
+	.pay_search .pay_top .right { margin-top: 30px; text-align: right; }
+	.view_type li a { font-size: 14px; line-height: 40px; }
+	.diary_num { font-size: 32px; }
+
+	.pay_top .left .name { font-size: 19px; }
+
+
+}
+
+/* 모바일 상세 */
+@media all and (max-width:640px) {
+}
+
+/* 모바일 가로 */
+@media all and (max-width:568px) {
+
+	.white_box { padding: 20px 15px; }
+	select, input[type="text"], input[type="password"] { height: 40px; }
+
+	.search_wrap ul li .wrap > div { font-size: 12px; }
+	.search_wrap ul li .wrap .sub { padding: 10px; }
+	.search_wrap ul li .wrap .sub input.datepicker { background-size: 15px; }
+	.search_wrap ul li .wrap .sub.m_wid { display: block; }
+	.search_wrap ul li .wrap .sub.m_wid .ml10 { margin-left: 0 !important; margin-top: 10px; }
+	.search_wrap ul li .wrap .sub .middle.num { width: 80px; }
+
+	.btn a { width: 170px; font-size: 15px; }
+	.btn.small a { width: 100px; font-size: 13px; height: 40px; line-height: 38px;}
+	.btn.s-small a { width: 80px; font-size: 13px; height: 40px; line-height: 38px; }
+	.btn.gray a { width: auto; padding: 0 10px; font-size: 13px; height: 40px; line-height: 38px; }
+
+	.board_table table th, .board_table table td { padding: 15px 10px; }
+	.board_table.board_list table th, 
+	.board_table.board_list table td { padding: 12px 0; font-size: 12px; }
+	.board_table table th.num { width: 40px; }
+	.board_table table th.data { width: 70px; }
+	.board_table table th.view { width: 40px; }
+	.tab li { margin-right: 15px; }
+	.tab li a { font-size: 14px; }
+	.pay_top .left .money span { display: block; font-size: 15px; margin-bottom: 5px; margin-right: 0; }
+
+}
+
+@media all and (max-width:425px) {
+
+}
+
+@media all and (max-width:375px) {
+
+}
+
+@media all and (max-width:320px) {
+
+}

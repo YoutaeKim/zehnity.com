@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+
+/* PC이하 */
+@media all and (max-width:1250px) {
+
+	.test_form ul li { display: block; margin-bottom: 0; }
+	.test_form ul li > div { width: 100%; margin-bottom: 10px; }
+
+}
+
+@media all and (max-width:1199px) {
+}
+
+/* 타블렛 세로 */
+@media all and (max-width:1023px) {
+
+	.approval_top { display: block; }
+	.approval_top .cancel_txt input { width: 70%; }
+	.approval_top .right { text-align: right; margin-top: 20px; }
+
+	.info_wrap > div { width: 100%; display: block; margin-right: 0; margin-bottom: 15px; }
+
+}
+
+
+/* 타블렛 가로 미만 ~ 모바일 */
+@media all and (max-width:767px) {
+
+	.approval_top { margin-bottom: 10px; }
+	.approval_top .right span { font-size: 13px; display: inline-block;  }
+	.approval_top .right span img { height: 10px !important; }
+	.table_scroll img { height: 17px; }
+
+	.down_popup .popup { width: 92%; padding: 30px 20px; }
+	.down_popup .popup .esc img { height: 25px; }
+	.down_popup .popup .tit { font-size: 20px; margin-bottom: 20px; }
+	.board-write table { table-layout: fixed; }
+	.board-write th, .board-write td { font-size: 13px; padding: 10px; }
+	.board-write th { width: 75px; box-sizing: border-box; }
+	.board-write td select { width: 100%; }
+	/* .board-write .btn a { width: 120px; } */
+
+	.info_cont .info_tit,
+	.test_form .test_tit { font-size: 18px; margin-bottom: 20px; }
+	.info_cont .info_sub { font-size: 16px; margin-bottom: 12px; }
+	.info_cont .info_sub img { height: 9px; margin-right: 3px;  }
+	.info_cont .info_sub_small { font-size: 15px; margin-left: 16px; }
+	.info_cont ul { margin-left: 16px; }
+	.info_cont ul li { font-size: 14px; }
+
+	.test_form ul li > div { line-height: 1.5em; }
+
+	.login_wrap { height: auto; }
+	.login_wrap .flex { height: auto; padding: 200px 0 150px; display: block; margin-top: 0; }
+	.login_wrap .white_box { width: 92%; padding: 40px 30px; }
+	.login_footer { font-size: 12px; position: static; }
+
+}
+
+/* 모바일 상세 */
+@media all and (max-width:640px) {
+
+
+}
+
+/* 모바일 가로 */
+@media all and (max-width:568px) {
+
+	.board-search-field { width: 140px; }
+	.excel_btn a { font-size: 13px; padding: 0 10px; height: 40px;line-height: 38px; }
+	.excel_btn a img { height: 18px; }
+	.id_btn a { height: 40px;line-height: 38px; width: auto; padding: 0 10px; font-size: 12px; margin-left: 5px; }
+
+	.board-write .btn a { width: 130px; }
+
+	.login_wrap .flex { padding: 150px 0 100px; }
+	.login_wrap .white_box { padding: 35px 20px; }
+	.login_tit { font-size: 32px; }
+
+}
+
+@media all and (max-width:425px) {
+
+	
+
+}
+
+@media all and (max-width:375px) {
+
+}
+
+@media all and (max-width:320px) {
+
+}
