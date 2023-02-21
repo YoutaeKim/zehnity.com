@@ -1,4 +1,15 @@
+<!--#include virtual="/common/fun/fncSetup.asp"-->
 <%
+  Language="KO"
+  PageName = "sub06"
+  SubName = "en"
+  header = "sub"
+
+If Not(CKMemberCode = "" Or IsNull(CKMemberCode)) Then	
+	Call MoveTop("/en/main.asp")
+	Response.end
+End If
+
   Language="KO"
   PageName = "sub09"
   SubName = "ko"

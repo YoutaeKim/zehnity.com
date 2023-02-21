@@ -262,6 +262,14 @@ Class clsCommon
 		Call ErrorCheck()
 	End Function
 
+	'메인 프로젝트 갯수, 금액, 후원단체 수치 가져오기
+	Public Function GetMainInfo()
+		'On Error Resume Next
+		GetMainInfo = objDBHelper.ExecSPReturnRsRow("usp_MainInfo", Nothing, Nothing)
+		
+		Call ErrorCheck()
+	End Function
+
 	'소멸자
 	Private Sub Class_Terminate()
 		If Not objDBHelper Is Nothing Then

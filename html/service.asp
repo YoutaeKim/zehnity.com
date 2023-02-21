@@ -1,4 +1,5 @@
-<%
+<!--#include virtual="/common/fun/fncSetup.asp"-->
+<% 
   Language="KO"
   PageName = "sub01"
   SubName = "ko"

@@ -50,12 +50,13 @@ Dim Cols_MSG : Cols_MSG = "미입력"
 
 If Not( sgCode = "" Or IsNull(sgCode) Or sgMode = "" Or IsNull(sgMode) ) Then
 	Set objCommon = New clsCommon
-	If sgMode = "default" Then
-		'description = NullValue(description," ")
-		bRet = objCommon.SetSystemUpdate(CKMemberCode, sgCode , groupName, groupType, homePage, workerName, tell, email, payMethod, sgLogoImg, address, description, sgTemplate)
-	Else
-		bRet = objCommon.SetSupportGroupAddUpdate(sgCode, titleImg1, titleImg2, titleImg3, titleName, titleDesc, introImg1, introImg2, introImg3, introTitle, introDesc, mapX, mapY )
-	End If
+'	If sgMode = "default" Then		
+		bRet = objCommon.SetSystemUpdate(CKMemberCode, sgCode , groupName, groupType, homePage, workerName, tell, email, payMethod, sgLogoImg, address, description, sgTemplate)		
+'	Else
+		If bRet ="0" Then
+			bRet = objCommon.SetSupportGroupAddUpdate(sgCode, titleImg1, titleImg2, titleImg3, titleName, titleDesc, introImg1, introImg2, introImg3, introTitle, introDesc, mapX, mapY )
+		End If
+'	End If
 	Set objCommon = Nothing
 
 Else

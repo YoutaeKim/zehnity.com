@@ -11,7 +11,7 @@ With Response
 	.Cookies("user")("Email")			= ""
 	.Cookies("user")("UserName")		= ""
 	.Cookies("user")("JoinType")		= ""
-
+	.Cookies("user")("sgCode")			= ""
 	.Cookies("user")					= ""
 	.Cookies("user").domain				= sysDomain
 	.Cookies("user").expires			= Date() - 1

@@ -1,6 +1,7 @@
 <!--#include virtual="/common/fun/fncSetup.asp"-->
 <!--#include virtual="/common/inc/inc_clsInit.asp"-->
 <!--#include virtual="/common/class/clsBoard.asp"-->
+<!--#include virtual="/common/class/clsCommon.asp"-->
 <%
   Language="KO"
   PageName = ""
@@ -9,6 +10,19 @@ Set objBoard = New clsBoard
 Dim arrPhotoList : arrPhotoList = objBoard.GetBoardCommonList( "", "", "B0104", 0, 0, 0, 1, 10)
 Dim arrNewsList : arrNewsList = objBoard.GetBoardCommonList( "", "", "B0101", 0, 0, 0, 1, 10)
 Set objBoard = Nothing
+
+Set objCommon = New clsCommon
+Dim arrMainInfo : arrMainInfo = objCommon.GetMainInfo()
+Set objCommon = Nothing
+Dim Cols_IngProject : Cols_IngProject = 501
+Dim Cols_IngGroup : Cols_IngGroup = 200
+Dim Cols_SumMoney
+If IsArray(arrMainInfo) Then
+	Cols_IngProject = Cols_IngProject + arrMainInfo(1,0)	
+	Cols_IngGroup	= Cols_IngGroup + arrMainInfo(0,0)
+	Cols_SumMoney	= arrMainInfo(2,0)
+
+End If
 %>
 
 <!-- #include file = '../include/head.asp' -->
@@ -36,7 +50,7 @@ Set objBoard = Nothing
                     </div>
                     <div class="alt_box">
                         <div class="name">An ongoing project</div>
-                        <div class="num"><span class="counter">780</span><span class="plus">+</span></div>
+                        <div class="num"><span class="counter"><%=FormatNumber(Cols_IngProject,0)%></span><span class="plus">+</span></div>
                     </div>
                 </div>
 
@@ -46,7 +60,7 @@ Set objBoard = Nothing
                     </div>
                     <div class="alt_box">
                         <div class="name">The donated amount ($)</div>
-                        <div class="num counter">37,800</div>
+                        <div class="num counter"><%=FormatNumber(Cols_SumMoney,0)%></div>
                     </div>
                 </div>
 
@@ -56,7 +70,7 @@ Set objBoard = Nothing
                     </div>
                     <div class="alt_box">
                         <div class="name">A sponsoring organization</div>
-                        <div class="num"><span class="counter">480</span><span class="plus">+</span></div>
+                        <div class="num"><span class="counter"><%=FormatNumber(Cols_IngGroup,0)%></span><span class="plus">+</span></div>
                     </div>
                 </div>
             </div>

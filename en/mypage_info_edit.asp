@@ -27,7 +27,7 @@ If IsArray(arrData) Then
 End If
 
 Set objCommon = New clsCommon
-Dim arrGroupInfo : arrGroupInfo = objCommon.GetSupportGroupInfo(CKMemberCode)
+Dim arrGroupInfo : arrGroupInfo = objCommon.GetSupportGroupInfo(CKsgCode)
 Set objCommon = Nothing
 If IsArray(arrGroupInfo) Then
 	Cols_sgCode				= arrGroupInfo(0,0)

@@ -402,7 +402,12 @@ Set objCommon = Nothing
 			var openVal = 1;
 			if($("#bOpen").is(":checked") == true){
 				openVal = 0;
+				if($("#pCode").val() == "0" ){
+					alert("You must select a project.");					 
+					return false;
+				}
 			}
+			 
 			$.ajax({
 				url : "/common/json/board/board.update.json.asp",
 				type : "post",

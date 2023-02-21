@@ -28,6 +28,7 @@ If Not(uid = "" Or IsNull(uid)) Then
 		Cols_mPwd		= arrData(2,0)
 		Cols_Data		= arrData(3,0)
 		Cols_JoinType	= arrData(4,0)
+		Cols_sgCode		= arrData(5,0)
 		If upw = Cols_mPwd And Cols_Data = "0" Then
 			bRet = True
 			Cols_Data = 0
@@ -36,6 +37,7 @@ If Not(uid = "" Or IsNull(uid)) Then
 				.Cookies("user")("Email")			= uid
 				.Cookies("user")("UserName")		= Cols_mName
 				.Cookies("user")("JoinType")		= Cols_JoinType
+				.Cookies("user")("sgCode")			= Cols_sgCode
 				.Cookies("user").domain				= sysDomain
 				.Cookies("user").expires			= DateAdd("d", 1, Date)
 				.Cookies("user").path				= "/"
